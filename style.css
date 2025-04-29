@@ -88,10 +88,12 @@ a:hover, .active {
     color: darkred;
 }
 
-@media only screen and (max-width: 700px) {
-    nav a {
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: grid;
         grid-template-columns: 1fr;
         text-align: center;
+        
     }
 }
 
@@ -242,25 +244,79 @@ footer p {
 /*about page*/
 /*=========================*/
 
-.container {
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.faq dl {
+    margin-left: 20%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px
+}
+
+.faq img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+.faq dd {
+    margin-bottom: 20px;
+}
+
+.boxfactory {
     display: grid;
-    grid-template-columns: 300px auto 50px;
-    grid-template-rows: 400px 120px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
     gap: 10px;
     grid-column: auto;
+    margin-top: 10px;
+    background-size: 50%;
+    background-image:url(brick.jpg)
 }
 
-.box4 {
-    background-color: rgb(211, 237, 246);
-    font-size: 16px;
-    padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
+.box1 img {
+    height: auto;
+    width: 100%;
 }
 
-.box2 {
-    background-color: rgb(211, 237, 246);
+.box2 p {
     font-size: 20px;
+    text-align: center;
     padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(211, 237, 246);
+    font-family:'Times New Roman', Times, serif
+}
+
+.box3 img {
+    height: auto;
+    width: 100%;
+}
+
+.box4 img {
+    height: auto;
+    width: 100%;
+}
+
+.box5 img {
+    height: auto;
+    width: 100%;
+}
+
+.box6 img {
+    height: auto;
+    width: 100%;
+}
+
+/*=========================*/
+/*Services page*/
+/*=========================*/
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 100px;
 }
